@@ -17,7 +17,7 @@ export default defineConfig({
 				short_name: 'BeloTick',
 				description: 'BeloTick',
 				// display: "fullscreen"
-				theme_color: '#ffffff',
+				theme_color: 'darkblue',
 				icons: [
 					{
 						src: '/moviez_192x192.png',
