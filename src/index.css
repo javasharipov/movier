@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.container-all {
+	max-width: 1308px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+#genreContainer {
+	overflow-x: auto;
+	scrollbar-width: none; /* Firefox uchun scrollbarni yashirish */
+	-ms-overflow-style: none; /* IE va Edge uchun scrollbarni yashirish */
+}
+
+#genreContainer::-webkit-scrollbar {
+	display: none; /* Chrome va Safari uchun scrollbarni yashirish */
+}
+
+#header .active {
+	color: #c61f1f;
+}
+
+#sidebar .active {
+	background-color: #c61f1f;
+	border-radius: 12px;
+	padding: 8px 16px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: calc(100% - 16px);
+	color: white;
+}
+
+#admin-sidebar .active {
+	background: dodgerblue;
+}
+
+#group-tab .active {
+	color: dodgerblue;
+	text-decoration: underline;
+}
